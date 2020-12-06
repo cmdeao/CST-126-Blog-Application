@@ -1,0 +1,76 @@
+<!-- 
+	Cameron Deao
+	CST-126
+	Robert Senser
+	12/6/2020 
+-->
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="ISO-8859-1">
+<style>
+	.topnav {
+		overflow: hidden;
+	}
+	
+	.topnav a {
+		float: right;
+		color: #333;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+	
+	div {
+		text-align: center;
+		font-size: 34px;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	form {
+		margin: 0 auto;
+		width: 500px;
+		text-align: center;
+	}
+	
+</style>
+<title>CST-126 Blog</title>
+
+</head>
+<body>
+<div class="topnav">
+	<a>Login</a>
+	<div>CST-126 Blog</div>
+</div>
+<br>
+<h1>Sign Up</h1>
+<form action="/registrationHandler.php" method="POST">
+	<!-- Form validation for all forms of user entry. Every field is required. -->
+	<label for="fname">First name:</label>
+	<input type="text" id="fname" name="fname" required><br>
+	<label for="lname">Last name:</label>
+	<input type="text" id="lname" name="lname" required><br>
+	<label for="emailaddress">Email:</label>
+	<input type="email" id="emailaddress" name="emailaddress" required><br>
+	<label for="country">Country:</label>
+	<input type="text" id="country" name="country" required><br>
+	<label for="username">Username</label>
+	<input type="text" id="username" name="username" required><br>
+	<label for="password">Password:</label>
+	<input type="password" id="password" name="password" required><br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>
